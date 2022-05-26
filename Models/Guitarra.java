@@ -37,6 +37,7 @@ public class Guitarra extends DatosInstrumento implements Instrumento {
         return total;
     }
 
+    //sobreescritura de metodo
     @Override
     public double getPrecio() {
         double precio = super.getPrecio();
