@@ -10,4 +10,5 @@ public interface Instrumento {
     public String getInstrumento();
     public int getCantidad();
     public double getDesc();
+    public double getPrecio();
 }

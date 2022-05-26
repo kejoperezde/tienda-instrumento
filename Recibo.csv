@@ -1,0 +1,4 @@
+RECIBO No. **
+
+Instrumento{Precio=10000.0, Cantidad=1, Marca=Yamaha, Aditamentos=false}Violin{tipo=Stradivarius, tamaño=4/4}
+Instrumento{Precio=110.0, Cantidad=2, Marca=Yamaha, Aditamentos=true}Guitarra{genero=Country, traste=null}
