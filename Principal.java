@@ -1,5 +1,7 @@
 import Models.*;
-
+import Procesar.ProcesarInstrumentos;
+import Procesar.Recibocsv;
+import Procesar.Registrobin;
 public class Principal {
     public static void main(String args[]){
         ProcesarInstrumentos pi= new ProcesarInstrumentos();
@@ -11,7 +13,7 @@ public class Principal {
         i[2]=new Guitarra("Metal", "Alto y Ancho", 3000, -12, "Yamaha",0);
         i[3]=new Guitarra("Country", "Bajo y Ancho", 100, 2, "Yamaha", true,.4);
         try {
-            pi.getRecibo(i,rb,rc);
+            pi.procesarIns(i,rb,rc);
             rb.leerInstrumentobi();
         } catch (Exception e) {
             //TODO: handle exception
