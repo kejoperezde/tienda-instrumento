@@ -32,9 +32,6 @@ public class Recibocsv{
         try {
             outputStream = new PrintWriter(new FileOutputStream(fileName,true));//objeto de tipo editar archivo, true agrega texto nuevo
             outputStream.print("Instrumento de tipo: "+i.getClass().getSimpleName()+".........Precio: "+i.getPrecio());
-            if(i.getDesc()==0){
-                outputStream.print("  Cantidad: "+i.getCantidad()+"........Total: "+i.calcularPrecio()+"\n");
-            }
             if(i.getDesc()>.6){
                 outputStream.print("  Cantidad: "+i.getCantidad()+"  Con descuento del: 60%......Total: "+i.calcularPrecio(i.getDesc())+"\n");
             }

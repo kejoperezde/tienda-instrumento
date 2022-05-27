@@ -5,7 +5,7 @@ public class ProcesarInstrumentos {
     public void procesarIns(Instrumento[] i,Registrobin rb,Recibocsv rc) throws ExcCantidad,ExcDescuento,ExcPrecio{
         for (Instrumento ref : i) {
             try {
-                if(ref.getCantidad()<0){
+                if(ref.getCantidad()<=0){
                     throw new ExcCantidad();
                 }
                 else{
