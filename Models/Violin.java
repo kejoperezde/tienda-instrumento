@@ -8,13 +8,13 @@ public class Violin extends DatosInstrumento implements Instrumento {
     private String tamaño;
 
     // sobreecarga de constructores
-    public Violin(String tipo, String tamaño, double precio, int cantidad, String marca, boolean aditamentos,double desc) {
+    public Violin(double precio, int cantidad, String marca, boolean aditamentos,double desc, String tipo, String tamaño) {
         super(precio, cantidad, marca, aditamentos, desc);
         this.tipo = tipo;
         this.tamaño = tamaño;
     }
 
-    public Violin(String tipo, String tamaño, double precio, int cantidad, String marca,double desc) {
+    public Violin(double precio, int cantidad, String marca,double desc, String tipo, String tamaño) {
         super(precio, cantidad, marca,desc);
         this.tipo = tipo;
         this.tamaño = tamaño;

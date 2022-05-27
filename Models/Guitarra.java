@@ -6,13 +6,13 @@ public class Guitarra extends DatosInstrumento implements Instrumento {
      private String genero;
     private String traste;
 
-    public Guitarra(String genero, String trastedouble, double precio, int cantidad, String marca, boolean aditamentos,double desc) {
+    public Guitarra(double precio, int cantidad, String marca, boolean aditamentos,double desc, String genero, String traste) {
         super(precio, cantidad, marca, aditamentos, desc);
         this.genero = genero;
         this.traste = traste;
     }
 
-    public Guitarra(String genero, String traste, double precio, int cantidad, String marca,double desc) {
+    public Guitarra(double precio, int cantidad, String marca,double desc, String genero, String traste) {
         super(precio, cantidad, marca,desc);
         this.genero = genero;
         this.traste = traste;
