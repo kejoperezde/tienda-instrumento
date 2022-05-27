@@ -22,15 +22,15 @@ public class ProcesarInstrumentos {
                     rc.agregarInstrumento(ref);
                 }
             } catch (ExcCantidad e) {
-                System.out.println("Error tipo "+e.getClass().getSimpleName());
+                e.errorCantidad();
                 //e.StackOverflowError();
             } 
             catch (ExcDescuento e) {
-                System.out.println("Error tipo "+e.getClass().getSimpleName());
+                e.errorDescuento();
                 //e.StackOverflowError();
             }  
             catch (ExcPrecio e) {
-                System.out.println("Error tipo "+e.getClass().getSimpleName());
+                e.errorPrecio();
                 //e.StackOverflowError();
             }  
         }
