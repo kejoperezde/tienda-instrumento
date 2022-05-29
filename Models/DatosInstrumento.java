@@ -63,10 +63,10 @@ public abstract class DatosInstrumento implements Serializable {
         return this.desc;
     }
 
-    
     public void setDesc(double desc) {
         this.desc = desc;
     }
+    
     
     public String getInstrumento() {
         StringBuilder sb = new StringBuilder();
