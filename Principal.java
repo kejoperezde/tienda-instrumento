@@ -15,8 +15,8 @@ public class Principal {
         try {
             pi.procesarIns(i,rb,rc);
             rb.leerInstrumentobi();
+            rc.getFormatoRecibo();
         } catch (Exception e) {
-            //TODO: handle exception
         }
     }
 }

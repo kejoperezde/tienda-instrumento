@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
@@ -21,9 +20,9 @@ public class Registrobin{
             if(!f.exists()){
                 outputstream = new ObjectOutputStream(new FileOutputStream(this.fileName));//pasarle el nombre del archivo
                 outputstream.close();//cerrarlo
-                System.out.println("Se creo el archivo");
+                System.out.println("Se creo el archivo: " + f.getName());
             }else{
-                System.out.println("Ya existe el archivo");
+                System.out.println("Ya existe el archivo: " + f.getName());
             }
         } catch (FileNotFoundException e) {
             System.out.println("El error es de tipo: "+e.getClass().getSimpleName());
