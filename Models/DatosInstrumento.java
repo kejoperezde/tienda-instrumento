@@ -59,10 +59,6 @@ public abstract class DatosInstrumento implements Serializable {
         this.aditamentos = aditamentos;
     }
 
-    public boolean isAditamentos() {
-        return this.aditamentos;
-    }
-
     public double getDesc() {
         return this.desc;
     }
@@ -70,6 +66,7 @@ public abstract class DatosInstrumento implements Serializable {
     public void setDesc(double desc) {
         this.desc = desc;
     }
+    
     
     public String getInstrumento() {
         StringBuilder sb = new StringBuilder();
