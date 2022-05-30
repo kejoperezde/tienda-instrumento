@@ -21,14 +21,10 @@ public class Recibocsv {
         this.fileName = fileName;
         f = new File(fileName);
         try {
-            if (!f.exists()) {
                 outputStream = new PrintWriter(new FileOutputStream(fileName));
                 outputStream.println(header);
                 outputStream.close();
                 System.out.println("Se creo el archivo: " + f.getName());
-            }else{
-                System.out.println("Ya existe el archivo: " + f.getName());
-            }
         } catch (FileNotFoundException e) {
             System.out.println("Excepcion de tipo: " + e.getClass().getSimpleName());
             e.printStackTrace();
