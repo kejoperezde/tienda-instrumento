@@ -41,7 +41,7 @@ public class Recibocsv {
                                                                                  // agrega texto nuevo
             outputStream.print(i.getClass().getSimpleName() + "," + i.getPrecio() + ",");
             if (i.getDesc() > .6) {
-                outputStream.print(+i.getCantidad() + "," + i.calcularPrecio(i.getDesc()) + "\n");
+                outputStream.print(+i.getCantidad() + "," + "60.0," + i.calcularPrecio(.6) + "\n");
             } else {
                 outputStream.print(
                         i.getCantidad() + "," + (i.getDesc() * 100) + "," + i.calcularPrecio(i.getDesc()) + "\n");
@@ -76,7 +76,7 @@ public class Recibocsv {
                     // Tipo,Precio,Cantidad,Descuento,Total
                     System.out.println(datos[0] + "     " + datos[2] + "     " + datos[1] + "     " + datos[3] + "     " + datos[4]);
                     total += Double.parseDouble(datos[4]);
-                    items++;
+                    items += Integer.parseInt(datos[2]);
                 }
             }
             System.out.println("-------------------------------------------");
